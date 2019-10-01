@@ -1,0 +1,18 @@
+node_js:
+  - "node"
+
+script:
+- echo “Vérification du style avec jshint”
+- npm install jshint --save-dev
+- node_modules/.bin/jshint src
+- echo “Exécution des tests”
+- npm install
+- npm test
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
