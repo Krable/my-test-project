@@ -3,6 +3,8 @@ node_js:
 
 script:
 - echo “Vérification du style avec jshint”
+- npm install jshint --save-dev
 - node_modules/.bin/jshint src
 - echo “Exécution des tests”
+- npm install
 - npm test
