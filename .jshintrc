@@ -1,0 +1,15 @@
+{
+  "curly": true,
+  "eqeqeq": true,
+  "nocomma": true,
+  "esversion": 6,
+  "strict": "true",
+  "globals": {
+    "require": false,
+    "module": false,
+    "global": false,
+    "describe": false,
+    "it": false,
+    "expect": false
+  }
+}
