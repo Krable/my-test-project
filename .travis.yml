@@ -5,4 +5,4 @@ script:
 - echo “Vérification du style avec jshint”
 - node_modules/.bin/jshint src
 - echo “Exécution des tests”
-- npm update
+- npm test
